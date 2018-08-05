@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    background: url(https://static-cdn.jtvnw.net/ttv-platforms/background-art/404_backgroundart.jpg);
+}
+.filters {
+    padding: 20px;
+    background: #6441a4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.filters a {
+    letter-spacing: 2px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+    color: #D7CAF5;
+    padding: 10px;
+}
+.filters a:hover {
+    color: white;
+    text-decoration: none;
+}
+.main-logo {
+    width: 120px;
+}
+#response-area {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.stream {
+    max-width: 300px;
+    margin: 10px;
+    color: white;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: default;
+}
+.stream:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.stream p {
+    padding: 15px;
+    font-size: 1.071em;
+    font-weight: 400;
+    color: #777;
+}
+.stream * {
+    font-family: 'Roboto', sans-serif;
+}
+.stream p i {
+    padding-top: 15px;
+}
+.channel-name {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    color: #33c2a6;
+}
+.channel-name:hover {
+    text-decoration: none;
+}
+.status-message {
+    line-height: 1.5em;
+}
+@media(max-width: 400px) {
+    .filters {
+        flex-flow: column wrap;
+    }
+    .main-logo {
+        display: none;
+    }
+    img {
+        display: none;
+    }
+    .stream {
+        width: 100%;
+    }
+}
+img {
+    width: 100%;
+}
